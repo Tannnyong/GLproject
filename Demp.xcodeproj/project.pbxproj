@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50C0FE772616CA5A0024A03D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50C0FE762616CA5A0024A03D /* main.cpp */; };
+		506955FC261C4B650033566F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 506955FB261C4B650033566F /* main.cpp */; };
 		50C0FE812616CAF80024A03D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C0FE802616CAF80024A03D /* OpenGL.framework */; };
 		50C0FE832616CB6E0024A03D /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C0FE822616CB6E0024A03D /* libGLEW.2.1.0.dylib */; };
 		50C0FE882616CE4A0024A03D /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C0FE872616CE4A0024A03D /* libglfw.3.3.dylib */; };
@@ -29,8 +29,8 @@
 
 /* Begin PBXFileReference section */
 		506955F8261C3FE50033566F /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
-		50C0FE732616CA5A0024A03D /* Demp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Demp; sourceTree = BUILT_PRODUCTS_DIR; };
-		50C0FE762616CA5A0024A03D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		506955FB261C4B650033566F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		50C0FE732616CA5A0024A03D /* Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Demo; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C0FE802616CAF80024A03D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		50C0FE822616CB6E0024A03D /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../usr/local/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		50C0FE842616CBDE0024A03D /* libglfw.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.dylib; path = "../glfw-3.3.3.bin.MACOS/lib-x86_64/libglfw.3.dylib"; sourceTree = "<group>"; };
@@ -64,14 +64,22 @@
 			path = ImageLoad;
 			sourceTree = "<group>";
 		};
+		506955FA261C4B650033566F /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				506955FB261C4B650033566F /* main.cpp */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		50C0FE6A2616CA5A0024A03D = {
 			isa = PBXGroup;
 			children = (
+				506955FA261C4B650033566F /* Demo */,
 				506955F7261C3FCA0033566F /* ImageLoad */,
 				50C0FE9E261722580024A03D /* shaders */,
 				50C0FE972617204E0024A03D /* shaderclass */,
 				50C0FE8B2616D1000024A03D /* glad */,
-				50C0FE752616CA5A0024A03D /* Demp */,
 				50C0FE742616CA5A0024A03D /* Products */,
 				50C0FE7F2616CAF80024A03D /* Frameworks */,
 			);
@@ -80,17 +88,9 @@
 		50C0FE742616CA5A0024A03D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				50C0FE732616CA5A0024A03D /* Demp */,
+				50C0FE732616CA5A0024A03D /* Demo */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		50C0FE752616CA5A0024A03D /* Demp */ = {
-			isa = PBXGroup;
-			children = (
-				50C0FE762616CA5A0024A03D /* main.cpp */,
-			);
-			path = Demp;
 			sourceTree = "<group>";
 		};
 		50C0FE7F2616CAF80024A03D /* Frameworks */ = {
@@ -133,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		50C0FE722616CA5A0024A03D /* Demp */ = {
+		50C0FE722616CA5A0024A03D /* Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50C0FE7A2616CA5A0024A03D /* Build configuration list for PBXNativeTarget "Demp" */;
+			buildConfigurationList = 50C0FE7A2616CA5A0024A03D /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
 				50C0FE6F2616CA5A0024A03D /* Sources */,
 				50C0FE702616CA5A0024A03D /* Frameworks */,
@@ -145,9 +145,9 @@
 			);
 			dependencies = (
 			);
-			name = Demp;
+			name = Demo;
 			productName = Demp;
-			productReference = 50C0FE732616CA5A0024A03D /* Demp */;
+			productReference = 50C0FE732616CA5A0024A03D /* Demo */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -176,7 +176,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				50C0FE722616CA5A0024A03D /* Demp */,
+				50C0FE722616CA5A0024A03D /* Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -187,8 +187,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C0FE9B2617208C0024A03D /* shader.cpp in Sources */,
-				50C0FE772616CA5A0024A03D /* main.cpp in Sources */,
 				50C0FE952616D4AE0024A03D /* glad.c in Sources */,
+				506955FC261C4B650033566F /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50C0FE7A2616CA5A0024A03D /* Build configuration list for PBXNativeTarget "Demp" */ = {
+		50C0FE7A2616CA5A0024A03D /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50C0FE7B2616CA5A0024A03D /* Debug */,
